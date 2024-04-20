@@ -1,48 +1,207 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador txt</title>
-    <link rel="shortcut icon" href="Imagenes/candado.png" type="Imagenes/x-icon" />
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anna Swift</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="recentwork/imgs/icon.png" type="image/svg" sizes="16x16" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="phone.css" />
 </head>
+
 <body>
-    <div class="container">
-        <div class="encriptar">
-            <textarea 
-            name="texto" 
-            class="texto" 
-            id="texto" 
-            cols="30" 
-            rows="10"
-            placeholder="Ingresa el texto aquí"
-            ></textarea>
-        </div>
-        <div class="terminos">
-            <p>Solo letras minúsculas y sin acéntos</p>
-        </div>
-        <div class="botones">
-            <button class="btn-encriptar" type="button" onclick="encriptar()">
-                Encriptar
-            </button>
-            <input 
-                type="button" 
-                class="btn-desencriptar" 
-                value="Desencriptar" 
-                onclick="desencriptar()"
-            />
-        </div>
+  <!-- Navbar Section -->
+  <section id="main">
+    <!-- navbar code -->
+    <nav class="navbar">
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#my-projects">Recent</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <!-- Landing Page - Main Section (Value Prop Section) -->
+  <div class="content">
+    <!-- Div on the left -->
+    <div class="model">
+      <img class="img" alt="raheel ahmad" src="imgs/profile.jpg" />
     </div>
-    <div class="encriptado">
-        <img src="Imagenes/Muñeco.png" alt="" id="muñeco">
-        <div class="mensaje-encriptado" id="mensaje-encriptado">
-            <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
-            <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
-            <!--<textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>-->
-        </div> 
+
+    <!-- Div on the right -->
+    <div class="main-text">
+      <h1 class="logo-heading">Soy<span class="name">Jessica</span></h1>
+      <p>
+        Soy una persona que luchas por sus objetivos y le gusta adquirir nuevos conocimientos constantemente. Tengo conocimientos en el área de diseño gráfico y en algunos lenguajes de programación. He llevado a cabo algunos proyectos en el proceso de aprendizaje.
+      </p>
+      <p>Tengo una formación en  IT  support en AWS y en Azure. Actualmente, contruyo páginas web y me encuentro participando del proyecto Oracle ONE en Alura Latam.</p>
+      <a href="#contact" class="portfolio-button">Ponerse en contacto</a>
+      <!-- Social Icons -->
+      <div id="social-links">
+        <div class="social-links">
+          <a href="#" target="_blank" class="fab fa-facebook-f"></a>
+        </div>
+        <div class="social-links">
+          <a href="#" target="_blank" class="fab fa-twitter"></a>
+        </div>
+        <div class="social-links">
+          <a href="#" target="_blank" class="fab fa-instagram"></a>
+        </div>
+        <div class="social-links">
+          <a href="#" target="_blank" class="fab fa-youtube"></a>
+        </div>
+        </div>
+      </div>
     </div>
-    <script src="app.js"></script>
+  </div>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="skill-text">
+      <div class="skill-heading">
+        <span>Skills</span>
+        <h2>Mi experiencia</h2>
+      </div>
+      <div class="s-box-container">
+        <!-- Skill box # 1 -->
+        <div class="skill-box">
+          <div class="s-box-icon">
+            <i><img src="imgs/illustrator.svg" alt="" /></i>
+          </div>
+          <div class="s-box-text">
+            <p><strong>Adobe Illustrator</strong></p>
+          </div>
+        </div>
+        <!-- Skill box # 2 -->
+        <div class="skill-box">
+          <div class="s-box-icon">
+            <i><img src="imgs/photoshop.svg" alt="" /></i>
+          </div>
+          <div class="s-box-text">
+            <p><strong>Adobe Photoshop</strong></p>
+          </div>
+        </div>
+
+        <!-- Skill box # 3 -->
+        <div class="skill-box">
+          <div class="s-box-icon">
+            <i><img src="imgs/indesign.svg" alt="" /></i>
+          </div>
+          <div class="s-box-text">
+            <p><strong>Adobe InDesign</strong></p>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    <div class="skill-img">
+      <img src="imgs/skills-img.jpg" alt="skills-image" />
+    </div>
+  </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="skill-img">
+        <img src="imgs/people-hobbies.jpg" alt="skills-image" />
+      </div>
+      <div class="skill-text">
+        <div class="skill-heading">
+          <span>Mis hobbies</span>
+        </div>
+        <div class="s-box-container">
+          <!-- Skill box # 1 -->
+          <div class="skill-box">
+            <div class="s-box-icon">
+              <i><img src="imgs/" alt="" /></i>
+            </div>
+            <div class="s-box-text">
+              <p><strong>Patinar</strong></p>
+            </div>
+          </div>
+          <!-- Skill box # 2 -->
+          <div class="skill-box">
+            <div class="s-box-icon">
+              <i><img src="imgs/" alt="" /></i>
+            </div>
+            <div class="s-box-text">
+              <p><strong>Escuchar música</strong></p>
+            </div>
+          </div>
+  
+          <!-- Skill box # 3 -->
+          <div class="skill-box">
+            <div class="s-box-icon">
+              <i><img src="imgs/" alt="" /></i>
+            </div>
+            <div class="s-box-text">
+              <p><strong>Cocinar</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- Projects Section -->
+  <section id="Mis Proyectos">
+    <!-- Add projects section code -->
+    <div class="skill-heading">
+      <h2>Mis Proyectos</h2>
+    </div>
+
+    <div class="project-showcase">
+      <!-- Project # 1 -->
+      <div class="project one">
+        <div id="hide">
+          <a href="recentwork/index2.html" class="project-btn">View</a>
+        </div>
+      </div>
+      <!-- Project # 2 -->
+      <div class="project two">
+        <div id="hide">
+          <a href="recentwork/index1.html" class="project-btn">View</a>
+        </div>
+      </div>
+      <!-- Project # 3 -->
+      <div class="project three">
+        <div id="hide">
+          <a href="recentwork/index.html" class="project-btn">View</a>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="recent-btn">See More Projects</a>
+  </section>
+
+  <!-- Contact + Footer Section -->
+  <section id="contact">
+    <img src="imgs/contact.jpg" alt="contact-img" />
+    <h3>Let's work on <span>projects</span> together</h3>
+    <div class="contact-input">
+      <input type="email" placeholder="jessica.teran.martinez@gmail.com" />
+      <a href="#">Let's connect</a>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
